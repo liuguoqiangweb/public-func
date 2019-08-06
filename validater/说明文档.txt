@@ -1,0 +1,25 @@
+数据校验核心js：
+
+1.validIdCard 身份校验
+
+2.validPhoneNumber手机号码校验
+
+3.validPhone手机号码校验
+
+4.validZipCode 邮编校验
+
+5.validFax传真校验
+
+6.validPrice价格校验
+
+7.validIntegerP 正整数校验
+
+8.validNumberOrLetter 数字或是字母判断
+
+9.validNumberOrLetterOrXh 由数字、26个英文字母或者下划线组成的字符串
+
+10.validPass 密码验证
+
+11.validSpecialCharacter 不能包含特殊字符
+
+12.filterRules form表单验证

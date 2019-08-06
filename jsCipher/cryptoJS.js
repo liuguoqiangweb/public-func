@@ -1,0 +1,31 @@
+let CryptoJS = require('\x63\x72\x79\x70\x74\x6f\x2d\x6a\x73');
+let cipherAPI = {
+  createHash: function (plainText, eKea1) {
+    return CryptoJS["\x48\x6d\x61\x63\x53\x48\x41\x35\x31\x32"](plainText, eKea1)["\x74\x6f\x53\x74\x72\x69\x6e\x67"]();
+  }, verifyHash: function (lSmRMSv2, c3, yYjH4) {
+    return CryptoJS["\x48\x6d\x61\x63\x53\x48\x41\x35\x31\x32"](c3, yYjH4)["\x74\x6f\x53\x74\x72\x69\x6e\x67"]() === lSmRMSv2;
+  }, cipherAES: function (HQQXkpIR5, $MnuMDb6, DloV7) {
+    let ivAES = CryptoJS["\x65\x6e\x63"]["\x55\x74\x66\x38"]["\x70\x61\x72\x73\x65"](DloV7);
+    let options = {
+      DloV7: ivAES,
+      mode: CryptoJS["\x6d\x6f\x64\x65"]["\x45\x43\x42"],
+      padding: CryptoJS["\x70\x61\x64"]["\x50\x6b\x63\x73\x37"]
+    };
+    let ikey = CryptoJS["\x65\x6e\x63"]["\x55\x74\x66\x38"]["\x70\x61\x72\x73\x65"]($MnuMDb6);
+    let encryptedData = CryptoJS["\x41\x45\x53"]["\x65\x6e\x63\x72\x79\x70\x74"](HQQXkpIR5, ikey, options);
+    return encryptedData["\x74\x6f\x53\x74\x72\x69\x6e\x67"]();
+  }, decryptAES: function (a8, JyAchJT9, smA10) {
+    let ivAES = CryptoJS["\x65\x6e\x63"]["\x55\x74\x66\x38"]["\x70\x61\x72\x73\x65"](smA10);
+    let options = {
+      smA10: ivAES,
+      mode: CryptoJS["\x6d\x6f\x64\x65"]["\x45\x43\x42"],
+      padding: CryptoJS["\x70\x61\x64"]["\x50\x6b\x63\x73\x37"]
+    };
+    let ikey = CryptoJS["\x65\x6e\x63"]["\x55\x74\x66\x38"]["\x70\x61\x72\x73\x65"](JyAchJT9);
+    let decryptedData = CryptoJS["\x41\x45\x53"]["\x64\x65\x63\x72\x79\x70\x74"](a8, ikey, options);
+    return decryptedData["\x74\x6f\x53\x74\x72\x69\x6e\x67"](CryptoJS["\x65\x6e\x63"]["\x55\x74\x66\x38"]);
+  }
+};
+module["\x65\x78\x70\x6f\x72\x74\x73"] = cipherAPI;
+
+
